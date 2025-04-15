@@ -1,0 +1,147 @@
+{
+  "common": {
+    "welcome": "مرحباً بك في أون فارما",
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "search": "بحث",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات"
+  },
+  "auth": {
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "rememberMe": "تذكرني",
+    "noAccount": "ليس لديك حساب؟",
+    "haveAccount": "لديك حساب بالفعل؟"
+  },
+  "errors": {
+    "required": "هذا الحقل مطلوب",
+    "invalidEmail": "الرجاء إدخال بريد إلكتروني صحيح",
+    "passwordMismatch": "كلمات المرور غير متطابقة",
+    "minLength": "الحد الأدنى للطول هو {{min}} حرف"
+  },
+  "header": {
+    "home": "الرئيسية",
+    "products": "المنتجات",
+    "about": "عن الشركة",
+    "contact": "تواصل معنا",
+    "arabic": "العربية",
+    "english": "English"
+  },
+  "hero": {
+    "companyName": "شركة أون فارما",
+    "tagline": "جودة عالمية علي اراضي مصرية",
+    "description": "تعمل أون فارما بكل احترافية للارتقاء بجودة منتجاتنا، مع مواكبة التغيرات السريعة في الأسواق المحلية والدولية. نسعى دائماً للتميز في خدمة عملائنا، وموردينا.",
+    "discoverMore": "اكتشف المزيد >>"
+  },
+  "products": {
+    "title": "منتجاتنا",
+    "productDetails": "عرض التفاصيل",
+    "ingredients": "المكونات",
+    "application": "طريقة الاستخدام",
+    "order": "طلب المنتج",
+    "orderDescription": "يرجى الاتصال بنا لطلب المنتج",
+    "products": [
+      {
+        "id": 1,
+        "name": "جل أونيتولي",
+        "description": "يعزز الجل تجديد البشرة وترطيبها ويحسن ملمسها.",
+        "ingredients": "Disodium Cocoamphodiacetate, Cocamidopropyl Betaine, Menthol, Lauryl Glucoside, Melaleuca Alternifolia Leaf Oil(Tea Tree Oil), Chlorhexidine Digluconate, Chamomilla Recutita Flower Extract(Chamomile Extract), Aloe Barbadensis Leaf Juice, Rosa Damascena Flower Oil, Calendula Officinalis Flower Extract(Marigold Extract), Thymus Vulgaris Extract, Citric Acid, Disodium Edta, Parfum, Glycerin, Phenoxyethanol, Ci 17200, Aqua",
+        "application": "خذ كمية من الغسول على راحة اليد وضعها على المنطقة المرغوبة. استخدمها مباشرة دون تخفيف، ثم اشطفها بالماء الدافئ. كرر حسب الحاجة."
+      },
+      {
+        "id": 2,
+        "name": "غسول أونيتولي",
+        "description": "يمنح زيت شجرة الشاي رائحة مميزة ويساعد في الحفاظ على النضارة اليومية.",
+        "ingredients": "Disodium Cocoamphodiacetate, Cocamidopropyl Betaine, Menthol, Lauryl Glucoside, Melaleuca Alternifolia Leaf Oil(Tea Tree Oil), Chlorhexidine Digluconate, Chamomilla Recutita Flower Extract(Chamomile Extract), Aloe Barbadensis Leaf Juice, Rosa Damascena Flower Oil, Calendula Officinalis Flower Extract(Marigold Extract), Thymus Vulgaris Extract, Citric Acid, Disodium Edta, Parfum, Glycerin, Phenoxyethanol, Ci 17200, Aqua",
+        "application": "خذ كمية من الغسول على راحة اليد وضعها على المنطقة المرغوبة. استخدمها مباشرة دون تخفيف، ثم اشطفها بالماء الدافئ. كرر حسب الحاجة."
+      }
+    ]
+  },
+  "vision": {
+    "companyGoals": "اهداف الشركة",
+    "goals": [
+      "الحصول والحفاظ على موقع الريادة العالمية في المجالات المختارة من الأعمال",
+      "لخلق فرص نمو جديدة باستمرار في أعمالنا الاستراتيجية",
+      "لتكون من بين أفضل 10 شركات تعتمد عليها للعمل",
+      "لتحقيق عائد على رأس المال المستثمر يزيد على الأقل بنقطة 10 عن تكلفة رأس المال"
+    ],
+    "companyVision": "رؤية الشركة",
+    "vision": [
+      "الرعاية والمشاركة والنمو",
+      "سنواصل، بأقصى درجات العناية بالبيئة والمجتمع، تعزيز القيمة لعملائنا من خلال توفير منتجات مبتكرة وحلول اقتصادية فعالة",
+      "ولأصحاب المصلحة لدينا من خلال النمو وكفاءة التكلفة والاستثمار الحكيم للموارد"
+    ]
+  },
+  "explore": {
+    "title": "اكتشف مجموعتنا",
+    "description": "تقدم أون فارما مجموعة متنوعة من المنتجات الطبية والتجميلية، تم تصميمها بعناية لتلبية احتياجات العملاء المختلفة. تعرف على منتجاتنا الرائعة.",
+    "explore": "استكشف",
+    "products": {
+      "moisturizingGel": {
+        "name": "جل مرطب لتجديد البشرة",
+        "description": "يعزز تجديد البشرة ويحسن ملمس الجلد"
+      },
+      "soothingCreams": {
+        "name": "كريمات لتهدئة البشرة",
+        "description": "تركيبة فريدة لتحسين مظهر الندبات"
+      },
+      "antiWrinkle": {
+        "name": "منتجات مكافحة التجاعيد",
+        "description": "تساعد على إضفاء مظهر شاب ونضر"
+      },
+      "customTreatments": {
+        "name": "علاجات مخصصة للبشرة",
+        "description": "غنية بالفيتامينات ومضادات الأكسدة"
+      }
+    }
+  },
+  "contact": {
+    "title": "تواصل معنا",
+    "location": {
+      "title": "موقعنا",
+      "address1": "123 شارع فارما",
+      "address2": "المنطقة الطبية، المدينة"
+    },
+    "phone": {
+      "title": "اتصل بنا",
+      "number1": "+201100351668",
+      "number2": "+201100351663"
+    },
+    "email": {
+      "title": "راسلنا",
+      "address": "Onpharma2024@outlook.com"
+    },
+    "workingHours": {
+      "title": "ساعات العمل",
+      "hours": "من الاثنين إلى الجمعة: 9:00 صباحاً - 6:00 مساءً"
+    }
+  },
+  "footer": {
+    "companyInfo": {
+      "title": "أون فارما",
+      "description": "شريكك الموثوق في الحلول الصيدلانية. نحن ملتزمون بتقديم منتجات وخدمات عالية الجودة للمهنيين الصحيين والمرضى في جميع أنحاء العالم."
+    },
+    "quickLinks": {
+      "title": "روابط سريعة",
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "about": "من نحن",
+      "contact": "اتصل بنا"
+    },
+    "social": {
+      "title": "تابعنا",
+      "facebook": "فيسبوك",
+      "twitter": "تويتر",
+      "linkedin": "لينكد إن",
+      "instagram": "إنستغرام"
+    },
+    "copyright": "© {{year}} أون فارما. جميع الحقوق محفوظة."
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "common": {
+    "welcome": "Welcome to OnPharma",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "search": "Search",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "rememberMe": "Remember Me",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?"
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email",
+    "passwordMismatch": "Passwords do not match",
+    "minLength": "Minimum length is {{min}} characters"
+  },
+  "header": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "arabic": "Arabic",
+    "english": "English"
+  },
+  "hero": {
+    "companyName": "OnPharma",
+    "tagline": "Global Quality on Egyptian Soil",
+    "description": "OnPharma works professionally to enhance the quality of our products, keeping pace with rapid changes in local and international markets. We always strive to excel in serving our customers and suppliers.",
+    "discoverMore": "Discover More >>"
+  },
+  "products": {
+    "title": "Our Products",
+    "productDetails": "View Details",
+    "ingredients": "Ingredients",
+    "application": "How to Use",
+    "order": "Order Product",
+    "orderDescription": "Please Contact Us To Order The Product",
+    "products": [
+      {
+        "id": 1,
+        "name": "Onetoly Gel",
+        "description": "Gel Promotes Skin Regeneration, Hydration, and Improves Skin Texture.",
+        "ingredients": "Disodium Cocoamphodiacetate, Cocamidopropyl Betaine, Menthol, Lauryl Glucoside, Melaleuca Alternifolia Leaf Oil(Tea Tree Oil), Chlorhexidine Digluconate, Chamomilla Recutita Flower Extract(Chamomile Extract), Aloe Barbadensis Leaf Juice, Rosa Damascena Flower Oil, Calendula Officinalis Flower Extract(Marigold Extract), Thymus Vulgaris Extract, Citric Acid, Disodium Edta, Parfum, Glycerin, Phenoxyethanol, Ci 17200, Aqua",
+        "application": "Take An Amount Of The Wash On The Palm Of The Hand And Apply It To The Desired Area. Use It Directly Without Diluting It, Then Rinse It With Warm Water. Repeat As Needed."
+      },
+      {
+        "id": 2,
+        "name": "Onetoly Wash",
+        "description": "Tea tree oil Gives a distinctive scent and helps maintain everyday freshness.",
+        "ingredients": "Disodium Cocoamphodiacetate, Cocamidopropyl Betaine, Menthol, Lauryl Glucoside, Melaleuca Alternifolia Leaf Oil(Tea Tree Oil), Chlorhexidine Digluconate, Chamomilla Recutita Flower Extract(Chamomile Extract), Aloe Barbadensis Leaf Juice, Rosa Damascena Flower Oil, Calendula Officinalis Flower Extract(Marigold Extract), Thymus Vulgaris Extract, Citric Acid, Disodium Edta, Parfum, Glycerin, Phenoxyethanol, Ci 17200, Aqua",
+        "application": "Take An Amount Of The Wash On The Palm Of The Hand And Apply It To The Desired Area. Use It Directly Without Diluting It, Then Rinse It With Warm Water. Repeat As Needed."
+      }
+    ]
+  },
+  "vision": {
+    "companyGoals": "Company Goals",
+    "goals": [
+      "To acquire and maintain global leadership position in chosen areas of businesses",
+      "To continuously create new opportunities for growth in our strategic businesses",
+      "To be among the top 10 most admired companies to work for",
+      "To continuously achieve a return on invested capital of at least 10 points higher than the cost of capital"
+    ],
+    "companyVision": "Company Vision",
+    "vision": [
+      "Caring, Sharing, Growing",
+      "We will, with utmost care for the environment and society, continue to enhance value for our customers by providing innovative products and economically efficient solutions",
+      "and for our stakeholders through growth, cost-effectiveness, and wise investment of resources."
+    ]
+  },
+  "explore": {
+    "title": "Discover Our Collection",
+    "description": "OnPharma offers a variety of medical and cosmetic products, carefully designed to meet different customer needs. Get to know our amazing products.",
+    "explore": "Explore",
+    "products": {
+      "moisturizingGel": {
+        "name": "Moisturizing Gel for Skin Renewal",
+        "description": "Enhances skin renewal and improves skin texture"
+      },
+      "soothingCreams": {
+        "name": "Skin Soothing Creams",
+        "description": "Unique formula to improve the appearance of scars"
+      },
+      "antiWrinkle": {
+        "name": "Anti-Wrinkle Products",
+        "description": "Helps to give a youthful and fresh appearance"
+      },
+      "customTreatments": {
+        "name": "Custom Skin Treatments",
+        "description": "Rich in vitamins and antioxidants"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "location": {
+      "title": "Our Location",
+      "address1": "123 Pharma Street",
+      "address2": "Medical District, City"
+    },
+    "phone": {
+      "title": "Call Us",
+      "number1": "+201100351668",
+      "number2": "+201100351663"
+    },
+    "email": {
+      "title": "Email Us",
+      "address": "Onpharma2024@outlook.com"
+    },
+    "workingHours": {
+      "title": "Working Hours",
+      "hours": "Monday - Friday: 9:00 AM - 6:00 PM"
+    }
+  },
+  "footer": {
+    "companyInfo": {
+      "title": "OnPharma",
+      "description": "Your trusted partner in pharmaceutical solutions. We are committed to providing high-quality products and services to healthcare professionals and patients worldwide."
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "home": "Home",
+      "products": "Products",
+      "about": "About Us",
+      "contact": "Contact"
+    },
+    "social": {
+      "title": "Follow Us",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    },
+    "copyright": "© {{year}} OnPharma. All rights reserved."
+  }
+}
