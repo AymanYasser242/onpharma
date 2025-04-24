@@ -21,14 +21,17 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="w-full lg:w-1/2 space-y-4 xl:space-y-6">
+        <div
+          data-aos="fade-up"
+          className="w-full lg:w-1/2 space-y-4 xl:space-y-6"
+        >
           <h1 className="text-2xl md:text-3xl xl:text-5xl text-white font-semibold lg:font-bold text-start flex flex-col gap-3 lg:gap-6">
             <span className="text-secondary md:font-semibold">
               {t("hero.companyName")}
             </span>
             <span>{t("hero.tagline")}</span>
           </h1>
-          <p className="max-w-[30rem] text-sm md:text-base xl:text-lg text-start text-gray-300">
+          <p className="max-w-[30rem] text-sm md:text-base xl:text-base text-start text-gray-300">
             {t("hero.description")}
           </p>
           <a

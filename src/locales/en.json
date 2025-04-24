@@ -1,15 +1,11 @@
 {
   "common": {
     "welcome": "Welcome to OnPharma",
-    "login": "Login",
-    "register": "Register",
-    "logout": "Logout",
     "home": "Home",
     "about": "About",
     "contact": "Contact",
-    "search": "Search",
-    "profile": "Profile",
-    "settings": "Settings"
+    "seeMore": "See More",
+    "seeLess": "See Less"
   },
   "auth": {
     "email": "Email",
@@ -37,7 +33,7 @@
   "hero": {
     "companyName": "OnPharma",
     "tagline": "Global Quality on Egyptian Soil",
-    "description": "OnPharma works professionally to enhance the quality of our products, keeping pace with rapid changes in local and international markets. We always strive to excel in serving our customers and suppliers.",
+    "description": "We believe that our core mission is to create a healthier future for generations to come. As one of the leading pharmaceutical companies, we strive to achieve this goal with utmost passion, design, and dedication.",
     "discoverMore": "Discover More >>"
   },
   "products": {
@@ -46,20 +42,50 @@
     "ingredients": "Ingredients",
     "application": "How to Use",
     "order": "Order Product",
-    "orderDescription": "Please Contact Us To Order The Product",
+    "orderDescription": "For inquiries or orders",
     "products": [
       {
         "id": 1,
         "name": "Onetoly Gel",
         "description": "Gel Promotes Skin Regeneration, Hydration, and Improves Skin Texture.",
-        "ingredients": "Disodium Cocoamphodiacetate, Cocamidopropyl Betaine, Menthol, Lauryl Glucoside, Melaleuca Alternifolia Leaf Oil(Tea Tree Oil), Chlorhexidine Digluconate, Chamomilla Recutita Flower Extract(Chamomile Extract), Aloe Barbadensis Leaf Juice, Rosa Damascena Flower Oil, Calendula Officinalis Flower Extract(Marigold Extract), Thymus Vulgaris Extract, Citric Acid, Disodium Edta, Parfum, Glycerin, Phenoxyethanol, Ci 17200, Aqua",
+        "tags": ["Gel", "Skin Care", "Skin Renewal"],
+        "ingredients": [
+          "Tea Tree Leaf Oil",
+          "Damask Rose Flower Oil",
+          "Thyme Extract",
+          "Marigold Flower Extract (Calendula)",
+          "Aloe Vera Leaf Juice",
+          "Chamomile Flower Extract",
+          "Fragrance (Parfum)",
+          "Menthol",
+          "Citric Acid",
+          "Glycerin",
+          "Phenoxyethanol",
+          "CI 17200 (Red Colorant)",
+          "Water (Aqua)"
+        ],
         "application": "Take An Amount Of The Wash On The Palm Of The Hand And Apply It To The Desired Area. Use It Directly Without Diluting It, Then Rinse It With Warm Water. Repeat As Needed."
       },
       {
         "id": 2,
         "name": "Onetoly Wash",
         "description": "Tea tree oil Gives a distinctive scent and helps maintain everyday freshness.",
-        "ingredients": "Disodium Cocoamphodiacetate, Cocamidopropyl Betaine, Menthol, Lauryl Glucoside, Melaleuca Alternifolia Leaf Oil(Tea Tree Oil), Chlorhexidine Digluconate, Chamomilla Recutita Flower Extract(Chamomile Extract), Aloe Barbadensis Leaf Juice, Rosa Damascena Flower Oil, Calendula Officinalis Flower Extract(Marigold Extract), Thymus Vulgaris Extract, Citric Acid, Disodium Edta, Parfum, Glycerin, Phenoxyethanol, Ci 17200, Aqua",
+        "tags": ["Wash", "Skin Care", "Skin Renewal"],
+        "ingredients": [
+          "Tea Tree Leaf Oil",
+          "Damask Rose Flower Oil",
+          "Thyme Extract",
+          "Marigold Flower Extract (Calendula)",
+          "Aloe Vera Leaf Juice",
+          "Chamomile Flower Extract",
+          "Fragrance (Parfum)",
+          "Menthol",
+          "Citric Acid",
+          "Glycerin",
+          "Phenoxyethanol",
+          "CI 17200 (Red Colorant)",
+          "Water (Aqua)"
+        ],
         "application": "Take An Amount Of The Wash On The Palm Of The Hand And Apply It To The Desired Area. Use It Directly Without Diluting It, Then Rinse It With Warm Water. Repeat As Needed."
       }
     ]
@@ -106,8 +132,8 @@
     "title": "Contact Us",
     "location": {
       "title": "Our Location",
-      "address1": "123 Pharma Street",
-      "address2": "Medical District, City"
+      "address1": "6, Abd El-Hakim Sorour",
+      "address2": "New Nozha City, Cairo"
     },
     "phone": {
       "title": "Call Us",
@@ -117,16 +143,18 @@
     "email": {
       "title": "Email Us",
       "address": "Onpharma2024@outlook.com"
-    },
-    "workingHours": {
-      "title": "Working Hours",
-      "hours": "Monday - Friday: 9:00 AM - 6:00 PM"
     }
+  },
+  "about": {
+    "brand": "On Pharma",
+    "title": "create a healthier future\n for generations",
+    "whoWeAre": "Who We Are",
+    "description": "On Pharma is a leading Egyptian pharmaceutical company committed to delivering world-class healthcare solutions. With a focus on quality, innovation, and ethical practices, we develop and manufacture a wide range of safe, effective, and specialized medical products. Our mission is to improve human well-being by enhancing access to high-quality medications that meet the evolving needs of local and global communities. Driven by scientific excellence and social responsibility, On Pharma continues to shape the future of healthcare through continuous development, patient-centered care, and strategic partnerships."
   },
   "footer": {
     "companyInfo": {
       "title": "OnPharma",
-      "description": "Your trusted partner in pharmaceutical solutions. We are committed to providing high-quality products and services to healthcare professionals and patients worldwide."
+      "description": "We believe that our core mission is to create a healthier future for generations to come."
     },
     "quickLinks": {
       "title": "Quick Links",

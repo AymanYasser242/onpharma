@@ -5,6 +5,10 @@ export const useTranslation = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    // set html lang attribute
+    document.documentElement.lang = lng;
+    // set html dir attribute
+    document.documentElement.dir = lng === "ar" ? "rtl" : "ltr";
   };
 
   const currentLanguage = i18n.language;

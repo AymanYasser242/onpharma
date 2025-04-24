@@ -1,9 +1,47 @@
 import React from "react";
 import { useTranslation } from "../../hooks/useTranslation";
+import { Link } from "react-router";
 
 const Footer = () => {
   const { t } = useTranslation();
 
+  const footerLinks = [
+    {
+      label: t("footer.quickLinks.home"),
+      to: "/",
+    },
+    {
+      label: t("footer.quickLinks.products"),
+      to: "/products",
+    },
+    {
+      label: t("footer.quickLinks.about"),
+      to: "/about",
+    },
+    {
+      label: t("footer.quickLinks.contact"),
+      to: "/contact",
+    },
+  ];
+
+  const socialLinks = [
+    {
+      label: t("footer.social.facebook"),
+      to: "#",
+    },
+    {
+      label: t("footer.social.twitter"),
+      to: "#",
+    },
+    {
+      label: t("footer.social.linkedin"),
+      to: "#",
+    },
+    {
+      label: t("footer.social.instagram"),
+      to: "#",
+    },
+  ];
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,50 +62,29 @@ const Footer = () => {
               {t("footer.quickLinks.title")}
             </h3>
             <ul className="space-y-2">
-              <li>
-                <a
-                  href="/"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                >
-                  {t("footer.quickLinks.home")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/products"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                >
-                  {t("footer.quickLinks.products")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/about"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                >
-                  {t("footer.quickLinks.about")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/contact"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                >
-                  {t("footer.quickLinks.contact")}
-                </a>
-              </li>
+              {footerLinks.map(({ label, to }) => (
+                <li key={label}>
+                  <Link
+                    to={to}
+                    className="text-gray-400 hover:text-white transition-colors duration-300"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-xl font-semibold text-white">
-              {t("contact.location.title")}
+              {t("contact.title")}
             </h3>
             <ul className="space-y-2 text-gray-400">
               <li>{t("contact.location.address1")}</li>
               <li>{t("contact.location.address2")}</li>
-              <li>{t("contact.phone.number1")}</li>
+              <li dir="ltr">{t("contact.phone.number1")}</li>
+              <li dir="ltr">{t("contact.phone.number2")}</li>
               <li>{t("contact.email.address")}</li>
             </ul>
           </div>
@@ -78,30 +95,15 @@ const Footer = () => {
               {t("footer.social.title")}
             </h3>
             <div className="flex flex-col space-y-2">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-300"
-              >
-                {t("footer.social.facebook")}
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-300"
-              >
-                {t("footer.social.twitter")}
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-300"
-              >
-                {t("footer.social.linkedin")}
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-300"
-              >
-                {t("footer.social.instagram")}
-              </a>
+              {socialLinks.map(({ label, to }) => (
+                <Link
+                  key={label}
+                  to={to}
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  {label}
+                </Link>
+              ))}
             </div>
           </div>
         </div>

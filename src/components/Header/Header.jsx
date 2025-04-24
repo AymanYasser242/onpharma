@@ -1,108 +1,149 @@
-import React, { useState } from "react";
+import { useRef, useState } from "react";
 import { Icon } from "@iconify/react";
 import { useTranslation } from "../../hooks/useTranslation";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarMenuToggle,
+  Button,
+} from "@heroui/react";
 import { Link } from "react-router";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => setIsOpen(!isOpen);
   const { changeLanguage, currentLanguage, t } = useTranslation();
+  const menuToggleRef = useRef(null);
+  const headerLinks = [
+    {
+      label: t("header.home"),
+      to: "/",
+    },
+    {
+      label: t("header.products"),
+      to: "/products",
+    },
+    {
+      label: t("header.about"),
+      to: "/about",
+    },
+    {
+      label: t("header.contact"),
+      to: "/contact",
+    },
+  ];
+
+  const handleLinkClick = () => {
+    setIsOpen(!isOpen);
+    menuToggleRef.current.click();
+  };
+
+  const handleLanguageChange = (lang) => {
+    changeLanguage(lang);
+  };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-primary">
-      <nav className="w-full h-[4rem] flex justify-between items-center px-6 lg:px-12  shadow-sm">
-        <img src="/logo-header.svg" className="w-32 md:w-40" alt="Logo" />
-        <ul className="hidden md:flex justify-center items-center gap-x-6 rtl:space-x-reverse text-white font-semibold">
-          <li>
-            <Link to="/">{t("header.home")}</Link>
-          </li>
-          <li>
-            <Link to="/products">{t("header.products")}</Link>
-          </li>
-          <li>
-            <Link to="#">{t("header.about")}</Link>
-          </li>
-          <li>
-            <Link to="#">{t("header.contact")}</Link>
-          </li>
-        </ul>
-        <div className="hidden md:flex justify-center items-center text-white">
-          <button
-            className={`hover:text-red-500 ${
+    <Navbar className="bg-primary" maxWidth="xl" isBordered shouldHideOnScroll>
+      <NavbarContent>
+        <NavbarBrand>
+          <Link to="/">
+            <img src="/logo-header.svg" className="w-32 md:w-40" alt="Logo" />
+          </Link>
+        </NavbarBrand>
+      </NavbarContent>
+
+      <NavbarContent className="hidden md:flex" justify="center">
+        {headerLinks.map(({ label, to }) => (
+          <NavbarItem key={label}>
+            <Link
+              to={to}
+              className="text-white hover:text-red-500 transition-colors duration-200"
+            >
+              {label}
+            </Link>
+          </NavbarItem>
+        ))}
+      </NavbarContent>
+
+      <NavbarContent className="hidden md:flex gap-x-2" justify="end">
+        <NavbarItem>
+          <Button
+            variant="light"
+            size="sm"
+            className={`text-base hover:text-red-500 ${
               currentLanguage === "ar" ? "text-red-400" : "text-white"
             }`}
-            onClick={() => changeLanguage("ar")}
+            onPress={() => changeLanguage("ar")}
           >
             {t("header.arabic")}
-          </button>
-          <div className="w-[1px] h-5 bg-white mx-2" />
-          <button
-            className={`hover:text-red-500 ${
+          </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <div className="w-[1px] h-5 bg-white" />
+        </NavbarItem>
+        <NavbarItem>
+          <Button
+            variant="light"
+            size="sm"
+            className={`text-base hover:text-red-500 ${
               currentLanguage === "en" ? "text-red-400" : "text-white"
             }`}
-            onClick={() => changeLanguage("en")}
+            onPress={() => changeLanguage("en")}
           >
             {t("header.english")}
-          </button>
-        </div>
-        <button className="md:hidden text-white" onClick={toggleMenu}>
-          <Icon icon="mynaui:menu" width="24" height="24" />
-        </button>
-      </nav>
-      <div
-        className={`md:hidden fixed top-16 left-0 w-full bg-primary text-white transition-all duration-300 ease-in-out transform ${
-          isOpen
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 -translate-y-full pointer-events-none"
-        }`}
-      >
-        <div className="w-full flex flex-col items-start text-start p-6 space-y-4">
-          <Link
-            to="/"
-            className="w-full hover:text-red-500 transition-colors duration-200"
-          >
-            {t("header.home")}
-          </Link>
-          <Link
-            to="/products"
-            className="w-full  hover:text-red-500 transition-colors duration-200"
-          >
-            {t("header.products")}
-          </Link>
-          <a
-            href="#"
-            className="w-full hover:text-red-500 transition-colors duration-200"
-          >
-            {t("header.about")}
-          </a>
-          <a
-            href="#"
-            className="w-full hover:text-red-500 transition-colors duration-200"
-          >
-            {t("header.contact")}
-          </a>
+          </Button>
+        </NavbarItem>
+      </NavbarContent>
+
+      <NavbarMenuToggle
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+        className="md:hidden text-white"
+        onClick={() => setIsOpen(!isOpen)}
+        ref={menuToggleRef}
+      />
+
+      <NavbarMenu is className="bg-primary gap-y-2 py-4">
+        {headerLinks.map(({ label, to }) => (
+          <NavbarMenuItem key={label}>
+            <Link
+              to={to}
+              className="block w-full p-2 text-start text-lg text-white rounded-md hover:text-red-500 hover:bg-gray-100/30 transition-colors duration-200"
+              onClick={handleLinkClick}
+            >
+              {label}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+        <NavbarMenuItem>
           <div className="flex flex-row justify-center items-center gap-x-2 w-full">
-            <button
-              className={`hover:text-red-500 transition-colors duration-200 ${
+            <Button
+              variant="light"
+              size="sm"
+              className={`text-base hover:text-red-500 transition-colors duration-200 ${
                 currentLanguage === "ar" ? "text-red-400" : "text-white"
               }`}
-              onClick={() => changeLanguage("ar")}
+              onPress={() => handleLanguageChange("ar")}
             >
               {t("header.arabic")}
-            </button>
+            </Button>
             <div className="w-[1px] h-5 bg-gray-400"></div>
-            <button
-              className={`hover:text-red-500 transition-colors duration-200 ${
+            <Button
+              variant="light"
+              size="sm"
+              className={`text-base hover:text-red-500 transition-colors duration-200 ${
                 currentLanguage === "en" ? "text-red-400" : "text-white"
               }`}
-              onClick={() => changeLanguage("en")}
+              onPress={() => handleLanguageChange("en")}
             >
               {t("header.english")}
-            </button>
+            </Button>
           </div>
-        </div>
-      </div>
-    </header>
+        </NavbarMenuItem>
+      </NavbarMenu>
+    </Navbar>
   );
 };
 

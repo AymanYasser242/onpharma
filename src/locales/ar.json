@@ -9,16 +9,9 @@
     "contact": "اتصل بنا",
     "search": "بحث",
     "profile": "الملف الشخصي",
-    "settings": "الإعدادات"
-  },
-  "auth": {
-    "email": "البريد الإلكتروني",
-    "password": "كلمة المرور",
-    "confirmPassword": "تأكيد كلمة المرور",
-    "forgotPassword": "نسيت كلمة المرور؟",
-    "rememberMe": "تذكرني",
-    "noAccount": "ليس لديك حساب؟",
-    "haveAccount": "لديك حساب بالفعل؟"
+    "settings": "الإعدادات",
+    "seeMore": "اكتشف المزيد",
+    "seeLess": "عرض اقل"
   },
   "errors": {
     "required": "هذا الحقل مطلوب",
@@ -37,7 +30,7 @@
   "hero": {
     "companyName": "شركة أون فارما",
     "tagline": "جودة عالمية علي اراضي مصرية",
-    "description": "تعمل أون فارما بكل احترافية للارتقاء بجودة منتجاتنا، مع مواكبة التغيرات السريعة في الأسواق المحلية والدولية. نسعى دائماً للتميز في خدمة عملائنا، وموردينا.",
+    "description": "نؤمن  بأن رسالتنا الأساسية هي خلق مستقبل أكثر صحة للأجيال القادمة. وباعتبارنا إحدى شركات الأدوية الرائدة ، فإننا نسعى لتحقيق هذا الهدف بأعلى درجات الحماس والتصميم والتفاني.",
     "discoverMore": "اكتشف المزيد >>"
   },
   "products": {
@@ -46,20 +39,50 @@
     "ingredients": "المكونات",
     "application": "طريقة الاستخدام",
     "order": "طلب المنتج",
-    "orderDescription": "يرجى الاتصال بنا لطلب المنتج",
+    "orderDescription": "للاستفسار أو الطلبات",
     "products": [
       {
         "id": 1,
-        "name": "جل أونيتولي",
+        "name": "جل أون تو لي",
         "description": "يعزز الجل تجديد البشرة وترطيبها ويحسن ملمسها.",
-        "ingredients": "Disodium Cocoamphodiacetate, Cocamidopropyl Betaine, Menthol, Lauryl Glucoside, Melaleuca Alternifolia Leaf Oil(Tea Tree Oil), Chlorhexidine Digluconate, Chamomilla Recutita Flower Extract(Chamomile Extract), Aloe Barbadensis Leaf Juice, Rosa Damascena Flower Oil, Calendula Officinalis Flower Extract(Marigold Extract), Thymus Vulgaris Extract, Citric Acid, Disodium Edta, Parfum, Glycerin, Phenoxyethanol, Ci 17200, Aqua",
+        "tags": ["جل", "علاجات البشرة", "تجديد البشرة"],
+        "ingredients": [
+          "زيت أوراق شجرة الشاي",
+          "زيت أزهار الورد الدمشقي",
+          "مستخلص الزعتر",
+          "مستخلص أزهار الآذريون",
+          "عصارة أوراق الألوفيرا",
+          "مستخلص أزهار الكاموميل",
+          "عطر",
+          "المنثول",
+          "حمض الستريك",
+          "الجليسرين",
+          "فينوكسي إيثانول",
+          "CI 17200 (ملوّن أحمر)",
+          "الماء"
+        ],
         "application": "خذ كمية من الغسول على راحة اليد وضعها على المنطقة المرغوبة. استخدمها مباشرة دون تخفيف، ثم اشطفها بالماء الدافئ. كرر حسب الحاجة."
       },
       {
         "id": 2,
-        "name": "غسول أونيتولي",
+        "name": "غسول أون تو لي",
         "description": "يمنح زيت شجرة الشاي رائحة مميزة ويساعد في الحفاظ على النضارة اليومية.",
-        "ingredients": "Disodium Cocoamphodiacetate, Cocamidopropyl Betaine, Menthol, Lauryl Glucoside, Melaleuca Alternifolia Leaf Oil(Tea Tree Oil), Chlorhexidine Digluconate, Chamomilla Recutita Flower Extract(Chamomile Extract), Aloe Barbadensis Leaf Juice, Rosa Damascena Flower Oil, Calendula Officinalis Flower Extract(Marigold Extract), Thymus Vulgaris Extract, Citric Acid, Disodium Edta, Parfum, Glycerin, Phenoxyethanol, Ci 17200, Aqua",
+        "tags": ["غسول", "علاجات البشرة", "تجديد البشرة"],
+        "ingredients": [
+          "زيت أوراق شجرة الشاي",
+          "زيت أزهار الورد الدمشقي",
+          "مستخلص الزعتر",
+          "مستخلص أزهار الآذريون",
+          "عصارة أوراق الألوفيرا",
+          "مستخلص أزهار الكاموميل",
+          "عطر",
+          "المنثول",
+          "حمض الستريك",
+          "الجليسرين",
+          "فينوكسي إيثانول",
+          "CI 17200 (ملوّن أحمر)",
+          "الماء"
+        ],
         "application": "خذ كمية من الغسول على راحة اليد وضعها على المنطقة المرغوبة. استخدمها مباشرة دون تخفيف، ثم اشطفها بالماء الدافئ. كرر حسب الحاجة."
       }
     ]
@@ -106,8 +129,8 @@
     "title": "تواصل معنا",
     "location": {
       "title": "موقعنا",
-      "address1": "123 شارع فارما",
-      "address2": "المنطقة الطبية، المدينة"
+      "address1": "6 ش, عبدالحكيم سرور",
+      "address2": "النزهة الجديدة, القاهرة"
     },
     "phone": {
       "title": "اتصل بنا",
@@ -117,16 +140,18 @@
     "email": {
       "title": "راسلنا",
       "address": "Onpharma2024@outlook.com"
-    },
-    "workingHours": {
-      "title": "ساعات العمل",
-      "hours": "من الاثنين إلى الجمعة: 9:00 صباحاً - 6:00 مساءً"
     }
+  },
+  "about": {
+    "brand": "أون فارما",
+    "title": "إنشاء مستقبل صحي أفضل\n للأجيال القادمة",
+    "whoWeAre": "من نحن",
+    "description": "أون فارما هي شركة أدوية مصرية رائدة، تلتزم بتقديم حلول رعاية صحية بمعايير عالمية. نركز على الجودة والابتكار والالتزام الأخلاقي في تطوير وتصنيع مجموعة متنوعة من المنتجات الطبية الآمنة والفعالة والمتخصصة. رسالتنا هي تحسين رفاهية الإنسان من خلال تعزيز الوصول إلى أدوية عالية الجودة تلبي احتياجات المجتمعات المحلية والدولية المتغيرة. بدافع من التميز العلمي والمسؤولية الاجتماعية، تواصل أون فارما تشكيل مستقبل الرعاية الصحية من خلال التطوير المستمر ورعاية المرضى وبناء الشراكات الاستراتيجية."
   },
   "footer": {
     "companyInfo": {
       "title": "أون فارما",
-      "description": "شريكك الموثوق في الحلول الصيدلانية. نحن ملتزمون بتقديم منتجات وخدمات عالية الجودة للمهنيين الصحيين والمرضى في جميع أنحاء العالم."
+      "description": "نؤمن  بأن رسالتنا الأساسية هي خلق مستقبل أكثر صحة للأجيال القادمة."
     },
     "quickLinks": {
       "title": "روابط سريعة",
