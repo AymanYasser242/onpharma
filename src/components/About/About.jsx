@@ -31,7 +31,10 @@ const About = () => {
   }, [isExpanded, t]);
 
   return (
-    <div className="relative overflow-hidden px-6 md:px-10 xl:px-40 py-8 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
+    <div
+      id="about"
+      className="relative overflow-hidden px-6 md:px-10 xl:px-40 py-8 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12"
+    >
       <div className="flex items-center justify-end">
         <Image
           className="w-full max-w-[500px] max-h-full rounded-sm rounded-tr-[100px]"
@@ -54,14 +57,14 @@ const About = () => {
           {isExpanded ? t("common.seeLess") : t("common.seeMore")}
         </Button>
       </div>
-      <div className="absolute bottom-[-80px] right-0 ">
+      <div className="absolute bottom-[-80px] right-0 z-[-1]">
         <img
           src="/half-circle.svg"
           alt="half-circle"
           className="w-25 md:w-40"
         />
       </div>
-      <div className="absolute top-[-80px] left-0 rotate-180">
+      <div className="absolute top-[-80px] left-0 rotate-180 z-[-1]">
         <img
           src="/half-circle.svg"
           alt="half-circle"

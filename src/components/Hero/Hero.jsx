@@ -35,7 +35,7 @@ const Hero = () => {
             {t("hero.description")}
           </p>
           <a
-            href="#products"
+            href="#about"
             className="inline-block py-2 px-4 rounded-full bg-transparent text-center text-nowrap text-white font-semibold mt-6 border-[1px] border-[#FFF] hover:bg-primary transition-all duration-500"
           >
             {t("hero.discoverMore")}

@@ -13,11 +13,14 @@
   text-align: right;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Cairo", sans-serif;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
 }
 
 /* For Webkit browsers (Chrome, Safari) */
