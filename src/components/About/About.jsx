@@ -49,10 +49,19 @@ const About = () => {
           </h6>
           <div className="h-0.5 flex-1 max-w-80 bg-primary rounded-full" />
         </div>
-        <h2 className="capitalize whitespace-pre-line text-xl leading-8 md:text-3xl md:leading-10 font-extrabold text-primary/90">
+        <h2
+          className="capitalize whitespace-pre-line text-xl leading-8 md:text-3xl md:leading-10 font-extrabold text-primary/90"
+          data-aos="fade-up"
+        >
           {t("about.title")}
         </h2>
-        <p className="max-w-xl text-gray-600 text-base">{description}</p>
+        <p
+          className="max-w-xl text-gray-600 text-base"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          {description}
+        </p>
         <Button variant="ghost" size="sm" onPress={toggleExpansion}>
           {isExpanded ? t("common.seeLess") : t("common.seeMore")}
         </Button>
