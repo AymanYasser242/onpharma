@@ -46,7 +46,7 @@
     "products": [
       {
         "id": 1,
-        "name": "Onetoly Gel",
+        "name": "Onetoly Antiscar Gel",
         "description": "Gel Promotes Skin Regeneration, Hydration, and Improves Skin Texture.",
         "tags": ["Gel", "Skin Care", "Skin Renewal"],
         "ingredients": [
@@ -68,7 +68,7 @@
       },
       {
         "id": 2,
-        "name": "Onetoly Wash",
+        "name": "Onetoly Feminine Wash",
         "description": "Tea tree oil Gives a distinctive scent and helps maintain everyday freshness.",
         "tags": ["Wash", "Skin Care", "Skin Renewal"],
         "ingredients": [
