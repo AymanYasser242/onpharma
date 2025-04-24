@@ -14,7 +14,11 @@ const ProductView = () => {
   const product = products.find((p) => p.id === parseInt(id));
 
   if (!product) {
-    return <div className="p-8 text-center">Product not found</div>;
+    return (
+      <div className="w-full px-20 py-50 text-center text-2xl font-bold">
+        Product not found
+      </div>
+    );
   }
 
   const toggleExpand = () => {

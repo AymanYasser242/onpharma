@@ -39,7 +39,7 @@ const Footer = () => {
     },
     {
       label: t("footer.social.instagram"),
-      to: "#",
+      to: "https://www.instagram.com/onpharmaceuticals",
     },
   ];
   return (
@@ -96,13 +96,13 @@ const Footer = () => {
             </h3>
             <div className="flex flex-col space-y-2">
               {socialLinks.map(({ label, to }) => (
-                <Link
+                <a
                   key={label}
-                  to={to}
+                  href={to}
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   {label}
-                </Link>
+                </a>
               ))}
             </div>
           </div>

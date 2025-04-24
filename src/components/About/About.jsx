@@ -21,12 +21,12 @@ const About = () => {
   };
 
   const [description, setDescription] = useState(
-    isExpanded ? t("about.description") : t("about.description").slice(0, 200)
+    isExpanded ? t("about.description") : t("about.description").slice(0, 202)
   );
 
   useEffect(() => {
     setDescription(
-      isExpanded ? t("about.description") : t("about.description").slice(0, 200)
+      isExpanded ? t("about.description") : t("about.description").slice(0, 202)
     );
   }, [isExpanded, t]);
 
