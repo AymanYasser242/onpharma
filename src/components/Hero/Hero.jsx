@@ -23,9 +23,9 @@ const Hero = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="w-full lg:w-1/2 space-y-4 xl:space-y-6"
+          className="w-full lg:w-1/2 space-y-3 md:space-y-6"
         >
-          <h1 className="text-2xl md:text-3xl xl:text-5xl text-white font-bold text-start flex flex-col gap-3 lg:gap-6">
+          <h1 className="text-2xl md:text-3xl xl:text-5xl text-white font-bold text-start flex flex-col gap-2 lg:gap-6">
             <span className="text-secondary md:font-semibold">
               {t("hero.companyName")}
             </span>
