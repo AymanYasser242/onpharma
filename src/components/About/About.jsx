@@ -46,7 +46,7 @@ const About = () => {
           </h6>
           <div className="h-0.5 flex-1 max-w-80 bg-primary rounded-full" />
         </div>
-        <h2 className="capitalize whitespace-pre-line leading-10 text-3xl font-extrabold text-primary/90">
+        <h2 className="capitalize whitespace-pre-line text-xl leading-8 md:text-3xl md:leading-10 font-extrabold text-primary/90">
           {t("about.title")}
         </h2>
         <p className="max-w-xl text-gray-600 text-base">{description}</p>
