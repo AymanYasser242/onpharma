@@ -7,21 +7,6 @@
     "seeMore": "See More",
     "seeLess": "See Less"
   },
-  "auth": {
-    "email": "Email",
-    "password": "Password",
-    "confirmPassword": "Confirm Password",
-    "forgotPassword": "Forgot Password?",
-    "rememberMe": "Remember Me",
-    "noAccount": "Don't have an account?",
-    "haveAccount": "Already have an account?"
-  },
-  "errors": {
-    "required": "This field is required",
-    "invalidEmail": "Please enter a valid email",
-    "passwordMismatch": "Passwords do not match",
-    "minLength": "Minimum length is {{min}} characters"
-  },
   "header": {
     "home": "Home",
     "products": "Products",
@@ -103,6 +88,14 @@
       "We will, with utmost care for the environment and society, continue to enhance value for our customers by providing innovative products and economically efficient solutions",
       "and for our stakeholders through growth, cost-effectiveness, and wise investment of resources."
     ]
+  },
+  "director": {
+    "title": "Message From Managing Director",
+    "description": "Success of a pharmaceuticals company depends on consistently maintaining the highest standard of quality. Our commitment to quality encouraged us to establish a world class manufacturing facility conforming to Good Manufacturing Practices (GMP) with the active support and technical guidance of the globally reputed pharmaceuticals company in Egypt. Our mission is to develop and manufacture pharmaceuticals formulations in the most appropriate manner and to ensure the safety, efficacy and usefulness of our products. We direct our efforts to improve the quality of human life by enabling people to do more, feel better and live with full essence of life. By the grace of the Almighty and with the motivation and support of our people and partners, we look forward to be seen as an organization pioneering the implementation of innovative ideas, respected for strict adherence to ethical practices, reputed for the quality of products and appreciated for sustainable growth in our national and global operations",
+    "director": "DR/ AHMED SALAH MAHDY",
+    "directorTitle": "The Managing Director",
+    "leadership": "Leadership",
+    "readFullMessage": "Read Full Message"
   },
   "explore": {
     "title": "Discover Our Collection",
