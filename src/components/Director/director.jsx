@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const Director = () => {
-  const { t, isRTL } = useTranslation();
+  const { t } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(window.innerWidth > 768);
 
   const toggleExpansion = () => {
@@ -29,7 +29,7 @@ const Director = () => {
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
           {/* Image Section */}
           <div className="md:w-2/5 max-h-[550px] relative">
-            <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full">
+            <div className="bg-gray-200 border-3 border-gray-300 w-full h-full rounded-xl">
               <img
                 src="/ahmed-salah-3.png"
                 alt="ahmed salah"
