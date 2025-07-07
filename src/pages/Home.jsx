@@ -4,7 +4,7 @@ import Products from "../components/Products/Products";
 import Vision from "../components/Vision/Vision";
 import Explore from "../components/Explore/Explore";
 import About from "../components/About/About";
-import Director from "../components/director/director";
+import Director from "../components/Director/director";
 
 const Home = () => {
   return (
